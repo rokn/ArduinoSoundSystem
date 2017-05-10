@@ -50,9 +50,9 @@ void setup()
   size(200, 200);
 
   minim = new Minim(this);
-  port = new Serial(this, "/dev/ttyUSB1",9600); //set baud rate
+  port = new Serial(this, "/dev/ttyUSB7",9600); //set baud rate
  
- song = minim.loadFile("/home/rokner/song2.mp3");
+  song = minim.loadFile("/home/yasen/Downloads/song2.mp3");
   song.play();
  
   //in = minim.getLineIn(Minim.MONO,buffer_size,sample_rate);
@@ -112,8 +112,7 @@ freq_array[k] = 0;
   }
   delay(1); //delay for safety.
 }
- 
- 
+
 void stop()
 {
   // always close Minim audio classes when you finish with them
